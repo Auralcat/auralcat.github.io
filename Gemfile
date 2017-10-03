@@ -27,3 +27,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Add an archive page for posts and tags
 gem 'jekyll-archives'
+
+# Preview themes from GitHub pages on your computer
+# gem "github-pages"
