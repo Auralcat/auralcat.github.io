@@ -37,7 +37,7 @@ jekyll-archives:
 
 # Build settings
 markdown: kramdown
-theme: architect
+theme: Architect
 plugins:
   - jekyll-feed
   - jekyll-archives
