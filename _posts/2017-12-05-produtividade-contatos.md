@@ -49,8 +49,11 @@ O fluxo de trabalho se deu do seguinte modo: as tarefas estavam listadas na agen
 agendadas, dependendo do item. As tarefas foram marcadas com datas de entrega (`Ctrl-c Ctrl-d`) e os compromissos não tinham o
 prefixo TODO, eles foram marcados pelo comando de agendamento do org-mode (`Ctrl-c Ctrl-s`).
 
-[Imagem 1](https://auralcat.github.io/assets/org-agenda-demo.png)
-[Imagem 2](https://auralcat.github.io/assets/exemplo-arquivo-contato.png)
+![Imagem 1](https://auralcat.github.io/assets/org-agenda-demo.png)
+_Demonstração do org-agenda_
+
+![Imagem 2](https://auralcat.github.io/assets/exemplo-arquivo-contato.png)
+_Exemplo de arquivo de contato_
 
 Para marcar um item como terminado (DONE), o comando era `Ctrl-c Ctrl-t d` (coloquei alguns rótulos a mais, os dois padrões são
 TODO e DONE). No caso, d estava associado a DONE.
