@@ -1,25 +1,29 @@
-Testando um sistema de organização de atividades por contatos
+---
+layout: post
+title: Testando Um Sistema De Organização de Atividades Por Contatos
+---
 
+## Motivação
 Há umas semanas, conversando no Telegram, apareceu esta mensagem do @mr_octopus:
 
-```
-Produtividade deveria ser baseada em contatos. Ao meu ver, gerenciamento de contatos é algo essencial.
+> Produtividade deveria ser baseada em contatos. Ao meu ver, gerenciamento de contatos é algo essencial.
 
-O finado PalmOS, quando o Rubinstein apresentou o webOS, tinha algo ali de sensacional sendo apresentado: o Synergy.
+> O finado PalmOS, quando o Rubinstein apresentou o webOS, tinha algo ali de sensacional sendo apresentado: o Synergy.
 
-O conceito de organizar tudo centralizado no contato é excelente. Independente da origem do contato (WhatsApp, LinkedIn,
+> O conceito de organizar tudo centralizado no contato é excelente. Independente da origem do contato (WhatsApp, LinkedIn,
 SMS, ligação, e-mail, etc), deveria ser padrão vermos um contato na agenda e ali ver todo o histórico de comunicação com
 aquela pessoa. Ou grupos de pessoas, classificados por qualquer que seja o método (empresa, assunto, nível de
 relacionamento, etc).
 
-Pois o que quer que você produza, qualquer trabalho, é feito para alguém e no fim tanto faz o meio, o que vale é o
+> Pois o que quer que você produza, qualquer trabalho, é feito para alguém e no fim tanto faz o meio, o que vale é o
 público alvo. De um emoticon para sua companheira a uma proposta de trabalho, ou artigo publicado: são pessoas, sempre.
 ```
 
-Pra testar o conceito, utilizei o org-mode, do Emacs. As atividades foram organizadas por arquivos .org com o nome de
+## Método
+Pra testar o conceito, utilizei o [org-mode](http://orgmode.org/), do [Emacs](https://www.gnu.org/software/emacs/). As atividades foram organizadas por arquivos .org com o nome de
 cada contato. Dentro de cada arquivo, é possível colocar lista de tarefas, informação de contato, links para arquivos e
-outros protocolos (http, ftp, link para emails dos clientes do Emacs, itens do Gnus, IRC e mais), tabelas... tudo é
-organizado em texto puro, sem formatos proprietários ou que necessitam de um programa específico para trabalhar com o
+outros protocolos (http, ftp, link para emails dos clientes do Emacs, itens do [Gnus](http://gnus.org/about.html), [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat) e [mais](http://orgmode.org/manual/Handling-links.html)), tabelas... tudo é
+organizado em texto puro, sem formatos que necessitem de um programa específico para trabalhar com o
 arquivo. É possível usar outros programas para processar o texto do arquivo .org da maneira que o usuário quiser.
 
 A ideia do org-mode é trazer as tarefas à tona a partir de anotações estruturadas. Ele permite mover cada cabeçalho pra
@@ -32,20 +36,23 @@ que foi adicionado à agenda.
 Escolhi testar no Emacs por essa flexibilidade para montar o sistema da maneira que ficar mais confortável e também por
 já passar a maior parte do tempo dentro dele. Foi o terreno mais fértil pra provar o conceito.  Não é o sistema mais
 amigável por aí. Todoist e Wunderlist são exemplos mais prontos pra usar imediatamente após a instalação no seu
-dispositivo. Outro ponto fraco do Org mode por enquanto é que não há um aplicativo para dispositivos móveis pronto pra
+dispositivo.
+
+Outro ponto fraco do Org mode por enquanto é que não há um aplicativo para dispositivos móveis pronto pra
 acoplar aos arquivos do desktop, e também há a limitação do próprio Emacs. Ele foi feito pra ser usado com um teclado
 físico, não há muita conveniência no teclado de celular. Dá pra aliviar um pouco esse desconforto com o evil-mode, mas
 mesmo assim, não é o meio nativo dele.
 
-Impressões
+## Impressões
 
 O fluxo de trabalho se deu do seguinte modo: as tarefas estavam listadas na agenda com datas de entrega e datas
-agendadas, dependendo do item. As tarefas foram marcadas com datas de entrega (C-c C-d) e os compromissos não tinham o
-prefixo TODO, eles foram marcados pelo comando de agendamento do org-mode (C-c C-s).
+agendadas, dependendo do item. As tarefas foram marcadas com datas de entrega (`Ctrl-c Ctrl-d`) e os compromissos não tinham o
+prefixo TODO, eles foram marcados pelo comando de agendamento do org-mode (`Ctrl-c Ctrl-s`).
 
-(coloque algumas fotos)
+[Imagem 1](https://auralcat.github.io/assets/org-agenda-demo.png)
+[Imagem 2](https://auralcat.github.io/assets/exemplo-arquivo-contato.png)
 
-Para marcar um item como terminado (DONE), o comando era C-c C-t d (coloquei alguns rótulos a mais, os dois padrões são
+Para marcar um item como terminado (DONE), o comando era `Ctrl-c Ctrl-t d` (coloquei alguns rótulos a mais, os dois padrões são
 TODO e DONE). No caso, d estava associado a DONE.
 Em termos de organização, a visão dos itens ficou muito mais limpa do que se tivessem sido colocados em um único
 arquivo. Não tanto na visão de agenda, mas na hora do planejamento e de registrar a atividade. O nome de cada contato
@@ -65,7 +72,7 @@ frequentes com outros sistemas era não ter à mão tudo o que era necessário p
 entregar. Antigamente jogava tudo em uma lista só e ficava lá. Outro problema era olhar o que eu deixava lá. Na maior
 parte do tempo ficava esquecido.
 
-* Observações
+## Observações
 - Dependendo da quantidade de contatos, o número de listas pode ficar bem grande. Achar o contato específico pode ser
   complicado dependendo da forma de busca do aplicativo. No caso do Emacs, isso não chegou a ser problema por causa do
   ido-mode, que permite uma busca mais rápida.
@@ -83,10 +90,12 @@ parte do tempo ficava esquecido.
   direto da visão do dia, só marcando os itens como feitos ou outro rótulo pertinente. O org-mode cuida disso com a
   função org-agenda.
 
-* Ideias para melhorias
+## Ideias para melhorias
 - Seria legal ter uma maneira de falar com o contato direto do arquivo de tarefas. Na motivação pra esse experimento era
   possível fazer isso. Ao escrever esse item falei "ah, você tá pensando muito em termos do Emacs!", porque o programa
   te incentiva a fazer isso, a deixar tudo dentro dele... e pra montar uma solução assim não é tão difícil.
   Os meios universais pra isso são email e telefone... mas aí depende da implementação do programa específico. Ou a
   pessoa pode ligar do próprio celular.
+
+ _Em tempo: você pode mandar email de dentro do Emacs apertando `C-c C-o` em links como `mailto:exemplo@email.com`, desde que você tenha acesso a um servidor SMTP. Se você usa Gmail ou Outlook, esses serviços tem essa funcionalidade._
 - Um aplicativo mobile sincronizado com a instância principal ajuda bastante quando a pessoa estiver em movimento.
