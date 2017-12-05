@@ -50,7 +50,7 @@ agendadas, dependendo do item. As tarefas foram marcadas com datas de entrega (`
 prefixo TODO, eles foram marcados pelo comando de agendamento do org-mode (`Ctrl-c Ctrl-s`).
 
 ![Imagem 1](https://auralcat.github.io/assets/org-agenda-demo.png)
-_Demonstração do org-agenda_
+_Demonstração do org-agenda (timer é o pacote org-pomodoro)_
 
 ![Imagem 2](https://auralcat.github.io/assets/exemplo-arquivo-contato.png)
 _Exemplo de arquivo de contato_
