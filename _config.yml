@@ -24,10 +24,10 @@ twitter_username: miriamretka
 github_username:  Auralcat
 telegram_username: mretka
 
-# Do not publish posts from the future.
+# Do not publish posts from the future. (IT WORKS)
 # This is how you can "schedule" posts in your blog. Write them with the intended date
 # and keep them in the _posts folder with this setting below:
-future: true
+future: false
 
 # Jekyll Archives settings
 jekyll-archives:
