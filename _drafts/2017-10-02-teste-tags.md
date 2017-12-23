@@ -1,8 +1,20 @@
 ---
 layout: post
-title:  "Teste Tags"
-date:   2017-10-02 19:47:33 -0300
-categories: transição
+title:  "Como começar a contribuir com projetos no GitHub"
+date: Sáb Dez 23 20:56:06 -02 2017
 ---
 
-Teste para ver se a página de tags está funcionando.
+Fiz a minha primeira contribuição com código este ano, pra um pacote do
+Emacs, o pug-mode. O que eu vi foi que tinha uma maneira melhor de
+executar a função pra compilar os arquivos .pug. A função antiga era
+assim:
+
+```Ponha código aqui```
+
+- Falar sobre como escolher projetos
+- Como fazer perguntas
+- Onde buscar ajuda
+- Como fazer forks
+- Como mandar commits
+- Como mandar pull requests
+- Esperando o pull request ser aceito
