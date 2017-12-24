@@ -36,7 +36,7 @@ Número da faixa, Título, Nota
 Na primeira tentativa pra fazer esse script (cerca de Julho, Agosto de 2016,
 quando eu tinha acabado de migrar), não consegui avançar muito. Atacando o
 problema de volta este ano com mais conhecimentos em Ruby, consegui montar uma
-versão funcional. O arquivo completo está [[https://github.com/Auralcat/100-days-of-code/blob/master/scripts/songsToCSV.rb][aqui]].
+versão funcional. O arquivo completo está [aqui](https://github.com/Auralcat/100-days-of-code/blob/master/scripts/songsToCSV.rb).
 
 ```
 # You can use Find.find to get the list of directories to crawl:
