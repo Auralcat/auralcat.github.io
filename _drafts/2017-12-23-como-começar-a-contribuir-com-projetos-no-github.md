@@ -4,11 +4,6 @@ title:  "Como começar a contribuir com projetos no GitHub"
 date: 2017-12-23
 ---
 
-A ideia deste post é compartilhar como foi a minha primeira contribuição com
-código para um projeto hospedado no GitHub, desde a escolha do projeto até
-mandar o pull request e ter a confirmação que foi incorporado ao ramo "master"
-dele.
-
 # O primeiro Pull Request
 
 Pra mim a parte mais difícil foi escolher o projeto. Antes eu olhava e não
@@ -63,10 +58,78 @@ Telegram](https://github.com/helioloureiro/homemadescripts).
 Como comentei antes, o problema maior é escolher um projeto e dentro desse
 projeto escolher um ponto pra começar a trabalhar.
 
-Quanto a escolher o projeto, tem [este texto do Eric Raymond](http://www.catb.org/~esr/faqs/hacking-howto.html#idm45418026893328) onde ele dá
+Quanto a escolher o projeto, tem [este texto do Eric
+Raymond](http://www.catb.org/~esr/faqs/hacking-howto.html#idm45418026893328)
+onde ele dá
 umas dicas, como escolher um projeto que você utiliza com frequência ou um
-programa que você quer saber como funciona.
+programa que você quer saber como funciona. Não precisa ser algo muito grande ou
+mesmo envolvendo código: muitos projetos precisam de ajuda com documentação,
+testes, relatar bugs ao testar o software e tradução da documentação do inglês
+pra outras línguas.
 
-O GitHub tem as issues pra
-cada repositório. O que precisa ser feito está lá. Dá pra abrir outras issues
-também.
+Alguns critérios a mais para decidir:
+
+- Persistência
+  + Alguém trabalhou nesse projeto recentemente?
+  + Quando o último PR foi incluído no projeto principal?
+  + Há muitos PRs antigos esperando aprovação?
+
+- Funcionalidade:
+  + Qual é o objetivo do projeto? É um jogo? Lida com música, por exemplo?
+  + O que ele faz?
+  + Tem alguma funcionalidade que me interessa?
+
+- Comunidade:
+  + É amigável com iniciantes?
+  + Há alguém pra tirar dúvidas?
+  + Incentiva a participação de pessoas diversas?
+  + Tem alguém que lida com esse projeto perto de mim fisicamente pra tirar
+    dúvidas? _(essa é outra questão importante, tem como se comunicar online
+    sim, compartilhar tela e outras coisas, mas ajuda presencial é mais
+    eficiente)_.
+
+- Organização:
+  + As issues estão bem detalhadas?
+  + Tem labels pra direcionar pessoas novas?
+  + Tem documentação? Ela está bem detalhada? Está tudo bem explicado?
+  + Há recursos e material para pessoas iniciantes no projeto?
+
+Feita a escolha do projeto, os próximos passos são:
+
+- Ajeitar o ambiente de desenvolvimento: instalar dependências, configurar
+  programas, etc
+- Reproduzir bugs/situações mencionadas na issue que você pegou pra trabalhar
+- Montar a solução pro problema
+  + Nessa parte você pode ir fazendo commit pro seu fork sem se preocupar em
+    mandar tudo pronto de uma vez só. Uma boa prática é fazer commits atômicos,
+    isto é, fazer uma alteração bem definida no código, fazer o commit e mandar
+    pro seu fork.
+    Exemplo: alterar configuração de framework | commit | push | criar nova
+    função | commit | push | e assim vai.
+- Testar a solução do problema: aparece algum bug novo? Está funcionando mesmo?
+
+Aí é que chega a hora de abrir o pull request.
+O que mudou tudo pra mim foi encarar o pull request não como "está aqui o que eu
+fiz e quero botar no projeto de vocês", mas sim como "olha, tinha esse
+bug/pediram essa funcionalidade/o que estava na issue e eu fiz uma solução dessa
+maneira, o que posso melhorar nela?". Você está propondo uma solução para o
+problema do projeto. Se for aceita de primeira, parabéns!! Você pode pegar mais
+uma issue e trabalhar em outro problema.
+Agora, caso o pull request não for aceito, a pessoa vai falar algo como "tem
+esse ponto aqui que precisa mudar, esse outro ali"... aí você ajeita o código
+com esse feedback e manda o PR de novo, e vai repetindo até ficar de acordo.
+
+**AVISO**: Esse processo todo do PR pode demorar algumas semanas.
+
+# Links
+
+- [Choosing Projects](https://github.com/collections/choosing-projects) <- Cheio
+de outros links úteis
+- [Your First PR](https://yourfirstpr.github.io/)
+- [Awesome For-Beginners (lista de projetos com issues amigáveis para
+iniciantes)](https://github.com/MunGell/awesome-for-beginners)
+- [Contribuindo para projetos Open Source no Github mesmo sendo
+  iniciante](https://woliveiras.com.br/posts/contribuindo-para-projetos-open-source-no-github-mesmo-sendo-iniciante/)
+- [How To Contribute To Open
+  Source](https://opensource.guide/how-to-contribute/)
+- [Guia do FreeCodeCamp para contribuir com Open Source](https://github.com/freeCodeCamp/how-to-contribute-to-open-source)
