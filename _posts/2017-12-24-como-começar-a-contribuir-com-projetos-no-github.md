@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Como começar a contribuir com projetos no GitHub"
-date: 2017-12-23
+date: 2017-12-24
 ---
 
 # O primeiro Pull Request
@@ -120,6 +120,11 @@ esse ponto aqui que precisa mudar, esse outro ali"... aí você ajeita o código
 com esse feedback e manda o PR de novo, e vai repetindo até ficar de acordo.
 
 **AVISO**: Esse processo todo do PR pode demorar algumas semanas.
+
+# Considerações finais
+
+O primeiro pull request é o que dá mais trabalho. Depois disso, o segundo fica
+mais fácil, aí vem o terceiro, o quarto... e assim vai. :)
 
 # Links
 
